@@ -1,0 +1,21 @@
+{
+  "name": "dashkevich-diplom",
+  "version": "1.0.0",
+  "description": "diplom",
+  "main": "index.js",
+  "author": "Vadzim Dashkevich",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently \"nodemon index.js\" \"npm start --prefix client\""
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.10",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5"
+  },
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.3"
+  }
+}
