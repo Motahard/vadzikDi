@@ -12,14 +12,15 @@ route.get("/items", async (req, res) => {
 
 route.post("/items", async (req, res) => {
   try {
-    const { personName, itemName, count, date, outgo, category } = req.body;
+    const { personName, itemName, count, date, outgo, category, timestamp } = req.body;
     const item = new Item({
       personName: personName,
       itemName: itemName,
       count: count,
       date: date,
       outgo: outgo,
-      category: category
+      category: category,
+      timestamp: timestamp
     });
     const savedItem = await item.save();
     res.send(savedItem);

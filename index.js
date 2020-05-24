@@ -4,6 +4,7 @@ const connectDB = require("./db");
 const userRoute = require("./routes/user");
 const itemsRoute = require("./routes/items");
 const movingRoute = require("./routes/moving");
+const reportsRoute = require("./routes/reports");
 
 connectDB();
 
@@ -11,6 +12,7 @@ app.use(express.json());
 app.use("/api", userRoute);
 app.use("/api", itemsRoute);
 app.use("/api", movingRoute);
+app.use("/api", reportsRoute);
 
 const PORT = process.env.PORT || 5000;
 

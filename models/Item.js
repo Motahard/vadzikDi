@@ -24,6 +24,10 @@ const ItemSchema = mongoose.Schema({
   outgo: {
     type: Number,
     required: true
+  },
+  timestamp: {
+    type: Number,
+    required: true
   }
 });
 
